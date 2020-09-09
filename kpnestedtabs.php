@@ -7,12 +7,14 @@ class KPNestedTabs extends Module
             'name' => 'Parent tab',
             'class_name' => 'AdminKpNestedTabsParent',
             'parent_class_name' => 'CONFIGURE',
-            'icon' => 'extension'
+            'icon' => 'extension',
+            'skip_validation' => true,
         ],
         [
             'name' => '1st child tab',
             'class_name' => 'AdminKpNestedTabsFirst',
-            'parent_class_name' => 'AdminKpNestedTabsParent'
+            'parent_class_name' => 'AdminKpNestedTabsParent',
+            'skip_duplication' => true, // this needs to be better i guess
         ],
         [
             'name' => '2nd child tab',
